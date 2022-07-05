@@ -58,13 +58,14 @@ function addTransactionDOM(transaction) {
 
  
     transaction.amount
-  }</span><button class="delete-btn" onclick="removeTransaction(${
+  }
+span><button class="delete-btn" onclick="removeTransaction(${
     transaction.id
   })">x</button>
   `;
 
   list.appendChild(item);
-}
+{
 
 // Update the balance, income and expense
 function updateValues() {
