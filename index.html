@@ -1,54 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trucker</title>
-    <link href="stylesheet" rel="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tracker</title>
   </head>
   <body>
-    <h2>Trucker</h2>
+    <h2>Tracker</h2>
+
     <div class="container">
-     <h4>your balance</h4>
-     <h1 id="balance">R5000</h1>
-    <div class="inc-exp-container">
-      <div>
-          <h4>INCOME</h4>
-          <P id="Money-plus" class="money-plus">
-               +R0.00
-          </P>
+      <h4>Your Balance</h4>
+      <h1 id="balance">R1000.00</h1>
 
-</div>
-</div>
-    
-<H4>Expense</H4>
-<p id="money-minus" class="money-minus">
-     -R0.00
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money plus">+R0.00</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money minus">-R0.00</p>
+        </div>
+      </div>
 
-</p>
-<div>
-     <h3>history</h3>
-     <ul>
-      <li class="minus">
-          cash <span>R300</span><button class="delete-btn">X</button>
+      
 
-      </li>
-     </ul>
-     <H3>Add new Transitions</H3>
-     <form id="form">
-     <div class="form-contrl">
-          <label for="text">text</label>
-           <input type="text" id="text" placeholder="enter text...">
-     </div>
-     <div class="form-contrl">
-          <label for="amount">amount</label>
-           <input type="text" id="amount" placeholder="enter amount...">
-     </div>
-     </form>
-     <button class="btn">All Transitions</button>
-
-</div>
-</div>
+      
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Text</label>
+          <input type="text" id="text" placeholder="Enter text..." />
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            >Amount <br />
+            ( - expense, - income)</label
+          >
+          <input type="number" id="amount" placeholder="Enter amount..." />
+        </div>
+        <button class="btn">Add transaction</button>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
