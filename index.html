@@ -15,42 +15,45 @@
         <div class="button">
           <div>
             <h4>Income</h4>
-            <button class="btn income text-white bg-danger mb-3">+R0.00</button>
+            <button class="btn income text-white bg-danger mb-3" onclick="addIncome()">+R0.00</button>
 
             <h4>Expense</h4>
-            <button class="btn expense bg-success mb-3">-R0.00</button>
+            <button class="btn expense text-white bg-success mb-3" onclick="addExpense()">-R0.00</button>
           </div>
         </div>
       <br>
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">list</th>
+            <th scope="col">Income</th>
+            <th scope="col">Expense</th>
+            <th scope="col">Total</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>25.50</td>
+            <td>380</td>
+            <td>3600</td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>45.20</td>
+            <td>520</td>
+            <td>4700</td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <td colspan="2">1000</td>
+            <td>5.200</td>
           </tr>
         </tbody>
       </table>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+    
   </body>
 </html>
