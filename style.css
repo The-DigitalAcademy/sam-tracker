@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -8,7 +9,7 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background: #aeacac;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,17 +22,15 @@ body {
 .container {
   margin: 30px auto;
   width: 350px;
-  justify-content: center;
 }
 
 h1 {
   letter-spacing: 1px;
   margin: 0;
-  justify-content: center;
 }
 
 h3 {
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid rgb(248, 239, 239);
   padding-bottom: 10px;
   margin: 40px 0 10px;
 }
@@ -42,11 +41,11 @@ h4 {
 }
 
 .inc-exp-container {
-  background-color: #fff;
+  background-color: rgb(179, 168, 168);
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 20px 0;
 }
 
@@ -66,11 +65,11 @@ h4 {
 }
 
 .money.plus {
-  color: #e6e8e7;
+  color: #2ecc71;
 }
 
 .money.minus {
-  color: #ddd2d1;
+  color: #c0392b;
 }
 
 label {
@@ -78,74 +77,15 @@ label {
   margin: 10px 0;
 }
 
-input[type='text'],
-input[type='number'] {
-  border: 1px solid #dedede;
-  border-radius: 2px;
-  display: block;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-}
 
 .btn {
   cursor: pointer;
-  background-color: #706f75;
   box-shadow: var(--box-shadow);
-  color: #fff;
+  color: rgb(170, 163, 163);
   border: 0;
   display: block;
   font-size: 16px;
   margin: 10px 0 30px;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
 }
-
-.btn:focus,
-.delete-btn:focus {
-  outline: 0;
-}
-
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 40px;
-}
-
-.list li {
-  background-color: #fff;
-  box-shadow: var(--box-shadow);
-  color: rgb(201, 193, 193);
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-.list li.plus {
-  border-right: 5px solid #2ecc71;
-}
-
-.list li.minus {
-  border-right: 5px solid #c0392b;
-}
-
-.delete-btn {
-  cursor: pointer;
-  background-color: #e74c3c;
-  border: 0;
-  color: #fff;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 2px 5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-100%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-
-
