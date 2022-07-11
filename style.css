@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 :root {
-  --box-shadow: 0 1px 3px rgba(165, 162, 162, 0.12), 0 1px 2px rgba(173, 167, 167, 0.24);
+  --box-shadow: 0 1px 3px rgba(245, 240, 240, 0.12), 0 1px 2px rgba(173, 167, 167, 0.24);
 }
-
+c
 * {
   box-sizing: border-box;
 }
