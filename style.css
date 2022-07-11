@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 :root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --box-shadow: 0 1px 3px rgba(165, 162, 162, 0.12), 0 1px 2px rgba(173, 167, 167, 0.24);
 }
 
 * {
@@ -9,29 +9,28 @@
 }
 
 body {
-  background: #aeacac;
-  display: flex;
+  background: #626161;
+  display:flow-root;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
 
 .container {
   margin: 30px auto;
-  width: 350px;
+  width: 50px;
 }
 
 h1 {
-  letter-spacing: 1px;
+  letter-spacing: 10px;
   margin: 0;
 }
 
-h3 {
-  border-bottom: 1px solid rgb(248, 239, 239);
-  padding-bottom: 10px;
+h2 {
+  border-bottom-color: 1px solid rgb(187, 180, 180);
+  padding-right: 10px ;
   margin: 40px 0 10px;
 }
 
@@ -64,24 +63,23 @@ h4 {
   margin: 5px 0;
 }
 
-.money.plus {
-  color: #2ecc71;
+.income {
+  color: #727674;
 }
 
-.money.minus {
-  color: #c0392b;
+.expense {
+  color: #717573;
 }
 
 label {
-  display: inline-block;
-  margin: 10px 0;
+  display:flow-root
 }
 
 
 .btn {
   cursor: pointer;
-  box-shadow: var(--box-shadow);
-  color: rgb(170, 163, 163);
+  box-shadow:inset;
+  background: rgb(170, 163, 163);
   border: 0;
   display: block;
   font-size: 16px;
