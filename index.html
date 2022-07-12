@@ -11,45 +11,46 @@
     <h2><center>Tracker<center></h2>
       <br>
     <div class="container d-grid gap-2 col-6 mx-auto">
-      <center><h4>Your Balance</h4></center>
      <center> <h1 id="balance">R0.00</h1></center>
+     <div class="shadow-none p-3 mb-5 bg-light rounded"><center><h4>Your Balance</h4></center></div>
+<div class="shadow-sm p-3 mb-5 bg-body rounded">            <h4>Income</h4>
+  <button class="btn income text-white bg-danger mb-3" onclick="addIncome()">+R0.00</button></div>
+<div class="shadow p-3 mb-5 bg-body rounded">            <h4>Expense</h4>
+  <button class="btn expense text-white bg-success mb-3" onclick="addExpense()">-R0.00</button></div>
+<div class="shadow-lg p-3 mb-5 bg-body rounded"><table class="table">
+  <thead>
+    <tr>
+      <th scope="col">list</th>
+      <th scope="col">Income</th>
+      <th scope="col">Expense</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>25.50</td>
+      <td>380</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>45.20</td>
+      <td>520</td>
+      <td>4700</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">1000</td>
+      <td>5.200</td></div>
       <div class="container">
         <div class="button">
           <div>
-            <h4>Income</h4>
-            <button class="btn income text-white bg-danger mb-3" onclick="addIncome()">+R0.00</button>
-
-            <h4>Expense</h4>
-            <button class="btn expense text-white bg-success mb-3" onclick="addExpense()">-R0.00</button>
-          </div>
         </div>
       <br>
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">list</th>
-            <th scope="col">Income</th>
-            <th scope="col">Expense</th>
-            <th scope="col">Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>25.50</td>
-            <td>380</td>
-            <td>3600</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>45.20</td>
-            <td>520</td>
-            <td>4700</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">1000</td>
-            <td>5.200</td>
           </tr>
         </tbody>
       </table>
