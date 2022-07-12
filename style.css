@@ -28,16 +28,6 @@ h1 {
   margin: 0;
 }
 
-h2 {
-  border-bottom-color: 1px solid rgb(187, 180, 180);
-  padding-right: 10px ;
-  margin: 40px 0 10px;
-}
-
-h4 {
-  margin: 0;
-  text-transform: uppercase;
-}
 
 .inc-exp-container {
   background-color: rgb(179, 168, 168);
@@ -48,42 +38,17 @@ h4 {
   margin: 20px 0;
 }
 
-.inc-exp-container > div {
-  flex: 1;
-  text-align: center;
-}
-
-.inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
-}
-
-.money {
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin: 5px 0;
-}
-
-.income {
-  color: #727674;
-}
-
-.expense {
-  color: #717573;
-}
-
 label {
   display:flow-root
 }
 
 
 .btn {
-  cursor: pointer;
-  box-shadow:inset;
-  background: rgb(170, 163, 163);
-  border: 0;
+  
   display: block;
   font-size: 16px;
   margin: 10px 0 30px;
   padding: 20px;
   width: 100%;
 }
+
