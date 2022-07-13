@@ -28,7 +28,7 @@ let transactions = dummyTransactions;
 // }
 
 function showNotification() {
-  notification.classList.add("show");
+  notification.classList.add("enter show");
   setTimeout(() => {
     notification.classList.remove("show");
   }, 2000);
