@@ -10,9 +10,16 @@ color: rgb(108, 92, 252);
 color:red       
 }
 
-.sucess{
+.success{
  color:chartreuse         
 }
+
+
 .box{
 border: 2px;           
 }
+
+form{
+margin-left: 600px;
+}
+          
