@@ -14,9 +14,13 @@ color:red
  color:chartreuse         
 }
 form{
-margin-left: 600px;
+margin-left: 100px;
 }
 .app{
-           
-                
-}
+ width: 500px;
+height: 800px;
+margin-left: 500px;
+ margin-top: 20px;
+ background: rgb(241, 233, 233);
+flex-direction: column;
+       }          
