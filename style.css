@@ -1,26 +1,56 @@
 .secondary{
- color:darksalmon        
+ color:rgb(236, 230, 232)        
 }
-
-.primary{
-color: rgb(108, 92, 252);
-}
-
 .danger{
 color:red       
 }
 
 .success{
- color:chartreuse         
+ color:rgb(52, 100, 4)         
 }
 form{
 margin-left: 100px;
 }
 .app{
- width: 500px;
-height: 600px;
-margin-left: 500px;
- margin-top: 20px;
- background: rgb(241, 233, 233);
-flex-direction: column;
-       }          
+       align-items: center;
+       justify-content: center;
+       margin-left: 300px;
+       width: 460px;
+       height: 700px;
+       background: rgb(213, 168, 168);
+       font-weight: bold;
+}
+
+.app h1{
+       text-align: center;
+}
+
+#balance{
+       text-align: center;
+}
+
+#income{
+       text-align: center;
+}
+
+#expense{
+       text-align: center;
+}
+
+.form span{
+       margin-left: 30px;
+}
+
+.form input{
+       margin-left: 10px;
+}
+
+.table{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.submit{
+       margin-left: 150px;
+}
