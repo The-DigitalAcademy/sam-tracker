@@ -1,5 +1,6 @@
 .secondary{
- color:rgb(236, 230, 232)        
+border: solid 1px;
+ color:rgb(13, 14, 13)        
 }
 .danger{
 color:red       
@@ -14,11 +15,13 @@ margin-left: 100px;
 .app{
        align-items: center;
        justify-content: center;
-       margin-left: 300px;
-       width: 460px;
-       height: 700px;
+       margin-left: 500px;
+       width: 500px;
+       height: 680px;
+       margin-top: 20px;
        background: rgb(213, 168, 168);
        font-weight: bold;
+       flex-direction: column;
 }
 
 .app h1{
