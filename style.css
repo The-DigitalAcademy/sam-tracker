@@ -19,7 +19,7 @@ margin-left: 100px;
        width: 500px;
        height: 680px;
        margin-top: 20px;
-       background: rgb(213, 168, 168);
+       background: rgb(223, 216, 216);
        font-weight: bold;
        flex-direction: column;
 }
@@ -30,14 +30,17 @@ margin-left: 100px;
 
 #balance{
        text-align: center;
+       color: forestgreen;
 }
 
 #income{
        text-align: center;
+       color: darkgreen;
 }
 
 #expense{
        text-align: center;
+       color: red;
 }
 
 .form span{
