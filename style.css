@@ -57,6 +57,10 @@ align-items: center;
 justify-content: center;
 }
 
+table, th, td{
+border: solid 1px black;
+}
+
 .submit{
        margin-left: 150px;
 }

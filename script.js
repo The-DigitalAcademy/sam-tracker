@@ -1,23 +1,44 @@
-var state = {
- balance:0,          
- income :0,
- expense :0, 
- transactions: [
-           {type:'income',detail:'salary',amount: 150},
-           {type:'expense',detail:'petrol',name:300},
-           {type:'expense',detail:'salon',amount:300},
- ]    
+var state= {
+ balance:0,
+ income:0,
+ expense:0,          
+transactions:[        
+{type : 'income', detail:'cash money',amount: 4000},
+{type : 'income', detail: 'cash money',amount: 4000},
+{type : 'income', detail: 'cash money', amount: 4000},
+],
+}
+var balance = document.getElementById('balance')
+var income = document.getElementById('income')
+var expense = document.getElementById('expense')
+var name = document.getElementById('name')
+var amount = document.getElementById('amount')
+
+var money;
+var transaction;
+
+function addButton()
+
+
+ if(isValid(money) && isValid(transaction)) {  
+    tableData.push(   
+        
+    )          
 }
 
-var income=document.getElementById('income')
-var expense=document.getElementById('expense')
-var amount=document.getElementById('amount')
-
-function addName() {
-           name = document.getElementById('name').value
-           console.log(name);
+function display(){
+  balance.innerHTML= state.balance
+  income.innerHTML= state.income
+  expense.innerHTML= state.expense         
+           
 }
-
-// display everything
-function display() {}
 display();
+
+function isValid(value){
+   if(!value) {
+     return false;     
+   }
+   return true;       
+}
+
+
