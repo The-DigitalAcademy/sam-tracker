@@ -1,64 +1,69 @@
-var state= {
- balance:700,
- income:0,
- expense:0,          
-  data:[],
+var state = {
+  balance: 500,
+  income: 500,
+  expense: 500,
+  data: [],
 }
-var balance = document.getElementById('balance').value
-var income = document.getElementById('income').value
-var expense = document.getElementById('expense').vlaue
-var name = document.getElementById('name').value
-var amount = document.getElementById('amount').value
-
+function displayS() {
+  var balance = document.getElementById('balance')
+  var income = document.getElementById('income')
+  var expense = document.getElementById('expense')
+}
 var money;
 var transaction;
 
 function input() {
   amount = Number(document.getElementById('amount').value);
-  transactionName =document.getElementById('name').value;         
+  transactionName = document.getElementById('name').value;
 }
 
-function addButton(){
+function addButton() {
 
-  if(isValid(money) && isValid(transaction)) {  
-    data.push({ 
-     transactions: transaction,           
-      detail:'income',  
-      price,money,
+  if (isValid(money) && isValid(transaction)) {
+    data.push({
+      transactions: transaction,
+      detail: 'Income',
+      price, money, income
 
-    });  
+
+    });
 
     display();
-  } 
-  alert(income)
+  }
 
 }
-
-
-
-function display(){
-
-  balance.innerHTML= state.balance
-  income.innerHTML= state.income
-  expense.innerHTML= state.expense         
-           
-}
-
-function isValid(value){
-   if(!value) {
-     return false;     
-   }
-   return true;       
-}
-
-for (let i = 0; i < table.length; i++) {
-  tableRows.innerHTML += `
+function display() {
+  tableData.innerHTML = `<tr class="table">
+  <th>Detail</th>
+  <th>Group</th>
+  <th>Amount</th>
+</tr>`;
+  for (let i = 0; i < table.length; i++) {
+    tableData.innerHTML += `
   <tr>
-            <td>${table[i].id}</td>
-            <td>${table[i].transaction}</td>
-            <td>${table[i].type}</td>
-            <td>R${table[i].amount}</td>
-            <td><button class="remove" onClick="removeTransaction(${i})">Remove</button></td>
-          </tr>
-  `;
+  <td>${tableData[i].Detail}</td>
+  <td>${tableData[i].Group}</td>
+  <td>${tableData[i].Amount}</td>
+  <td><button class="remove" onClick="removeTransaction(${i})">Remove</button></td>
+</tr>
+`;
+  }
 }
+
+function display() {
+  balance.innerHTML = state.balance
+  income.innerHTML = state.income
+  expense.innerHTML = state.expense
+
+};
+
+display();
+
+console.log('enter your stores');
+function isValid(value) {
+  if (!value) {
+    return false;
+  }
+  return true;
+}
+display()
