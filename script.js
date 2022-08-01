@@ -4,66 +4,47 @@ var state = {
   expense: 500,
   data: [],
 }
-function displayS() {
-  var balance = document.getElementById('balance')
-  var income = document.getElementById('income')
-  var expense = document.getElementById('expense')
-}
+
+
 var money;
 var transaction;
 
-function input() {
-  amount = Number(document.getElementById('amount').value);
-  transactionName = document.getElementById('name').value;
-}
+// function acceptD(value) {
+//   if (!value) {
+//     return false;
+//   }
+//   return true;
+// }
+
+// function input() {
+//   amount = Number(document.getElementById('amount').value);
+//   // transactionName = document.getElementById('name').value;
+// }
 
 function addButton() {
+  transactionName = document.getElementById('name').value;
 
-  if (isValid(money) && isValid(transaction)) {
-    data.push({
-      transactions: transaction,
-      detail: 'Income',
-      price, money, income
+  console.log(name);
+  // if (acceptD(money) && acceptD(transaction)) {
+  //   data.push({
+  //     transactions: transaction,
+  //     detail: 'Income',
+  //     price, money, income
 
 
-    });
+  //   });
 
-    display();
-  }
+  //   display();
+  // }
 
 }
 function display() {
-  tableData.innerHTML = `<tr class="table">
-  <th>Detail</th>
-  <th>Group</th>
-  <th>Amount</th>
-</tr>`;
-  for (let i = 0; i < table.length; i++) {
-    tableData.innerHTML += `
-  <tr>
-  <td>${tableData[i].Detail}</td>
-  <td>${tableData[i].Group}</td>
-  <td>${tableData[i].Amount}</td>
-  <td><button class="remove" onClick="removeTransaction(${i})">Remove</button></td>
-</tr>
-`;
+  var balance = document.getElementById('balance')
+  var income = document.getElementById('income')
+  var expense = document.getElementById('expense')
   }
-}
-
-function display() {
   balance.innerHTML = state.balance
   income.innerHTML = state.income
   expense.innerHTML = state.expense
-
-};
-
 display();
 
-console.log('enter your stores');
-function isValid(value) {
-  if (!value) {
-    return false;
-  }
-  return true;
-}
-display()
