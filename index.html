@@ -1,68 +1,55 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trucker</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="app">
-    <h1 class=" btn secondary">Tracker</h1>
-         <h1 class=" btn dark">Balance</h1>
-         <div id="balance">R0.00</div>
+        <h1>Tracker</h1>
+        <div class="balance-container">
+            <h2>Your Balance</h2>
+          <div id="balance"></div>
+        </div>
 
+        <br><br>
 
-         <h1 class="btn success">Income</h1>
-            <div id="income">R0.00</div>
-
-
-            <h1 class="btn danger">Expense</h1>
-             <div id="expense">R0.00</div>
-
-             <div class="form">
-                  <span for="name">Name:</span>
-                  <input type="text" id="name"><br><br>
-
-                  <span for="amount">Amount:</span>
-                  <input type="number" id="amount">
-
-                  <br><br>
-
-                  <button type="button" onclick="alert('Addbutton')">Add sumbit</button>
-          
-                </div>
-                <br>
-
-             <div class="table" id="table">
-                <table width="350x">
-                  <tr>
-                    <th>Details</th>
-                    <th>Group</th>
-                    <th>Price</th>
-                  </tr>
-                  <tr>
-                    <td>Cash money</td>
-                    <td>Income</td>
-                    <td>R4000</td>
-                  </tr>
-                  <tr>
-                    <td>Cash money</td>
-                    <td>Income</td>
-                    <td>R4000</td>
-                  </tr>
-                  <tr>
-                    <td>Cash money</td>
-                    <td>Income</td>
-                    <td>R4000</td>
-                  </tr>
-                </table>
-                 </div>
+        <div class="cashflow-container">
+            <div class="income-container">
+                <h2 class="incomeT">Income</h2>
+                <div id="income">R0.00</div>
             </div>
 
- 
- <script src="./script.js"></script>
-  
+            <br><br>
+
+            <div class="expense-container">
+                <h2 class="expenseT">Expense</h2>
+                <div id="expense">R0.00</div>
+            </div>
+        </div>
+
+        <div class="transaction-container">
+            <h2>Transaction History</h2>
+            <ul id="transaction">
+                
+            </ul>
+        </div>
+
+        <div class="form-container">
+            <h2>Add new transction</h2>
+            <form onsubmit="return false;">
+                <label for="name">Name</label>
+                <input id="name" type="text">
+                <label for="amount">Amount</label>
+                <input id="amount" type="number">
+                <button id="incomeBtn">Income</button>
+                <button id="expenseBtn">Expense</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
     

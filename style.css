@@ -1,22 +1,4 @@
-.secondary{
-border: solid 3px;
-color:black;
-background-color: whitesmoke;
-}
-.success{
-color:green;
-border: solid 3px;
-background-color: whitesmoke;   
-}
 
-.danger{
-color:red;
-border: solid 3px;
-background-color: whitesmoke;       
-}
-form{
-margin-left: 100px;
-}
 .app{
        align-items: center;
        justify-content: center;
@@ -24,7 +6,7 @@ margin-left: 100px;
        width: 500px;
        height: 680px;
        margin-top: 20px;
-       background: rgb(223, 216, 216);
+       background: rgb(226, 211, 211);
        font-weight: bold;
        flex-direction: column;
 }
@@ -33,20 +15,30 @@ margin-left: 100px;
        text-align: center;
 }
 
-#balance{
+.balance-container{
+       font-weight: bold;
        text-align: center;
        color: black;
+       border: solid black;
+       background-color: whitesmoke;
 }
 
-#income{
+.income-container {
+       font-weight: bold;
        text-align: center;
        color: green;
+       border: solid black;
+       background-color: whitesmoke;
 }
 
-#expense{
+.expense-container {
+       font-weight: bold;
        text-align: center;
-       color:red;
+       color: red;
+       border: solid black;
+       background-color: whitesmoke;
 }
+
 
 .form span{
        margin-left: 30px;
@@ -56,29 +48,10 @@ margin-left: 100px;
        margin-left: 10px;
 }
 
-.table{
-display: flex;
-align-items: center;
-justify-content: center;
+.form-container #buttonincome{
+   background-color: red;    
 }
-
-table, th, td{
-border: solid 1px black;
-border-collapse: collapse;
-
-
+.form-container{
+       font-weight: bold;
+       text-align: center;    
 }
-
-.submit{
-       margin-left: 150px
-
-}
-.btn #secondary {
-       background-color:red;
-     }
-     
-.btn #success {
-       background-color: darkgreen;
-       color: white;
-      
-     }
