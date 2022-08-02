@@ -2,11 +2,8 @@ var state = {
   balance: 1000,
   income: 400,
   expense: 100,
-  transactions: [
-      // { id: uniqueId(), name: "Salary", amount: 1000, type: "income" },
-      // { id: uniqueId(), name: "Buy Grocery", amount: 50, type: "expense" },
-      // { id: uniqueId(), name: "Buy Guitar", amount: 500, type: "expense" }
-  ]
+  transactions: []
+
 }
 
 var balanceEl = document.querySelector('#balance');

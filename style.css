@@ -55,3 +55,13 @@
        font-weight: bold;
        text-align: center;    
 }
+.header{
+       text-align: center;
+}
+
+#incomebtn{
+       background-color:green;
+}
+#expensebtn{
+       background-color: red;
+}
